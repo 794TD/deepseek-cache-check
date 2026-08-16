@@ -1,0 +1,17 @@
+{
+  "name": "deepseek-cache-check",
+  "version": "0.1.0",
+  "description": "A DSH host-plane plugin (/cache-check [full]) that probes whether the DeepSeek prefix cache for the current conversation is still alive.",
+  "type": "commonjs",
+  "main": "dist/plugin.cjs",
+  "exports": {
+    ".": "./dist/plugin.cjs",
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "build": "node build/bundle.js",
+    "setup": "node install.mjs",
+    "setup:web": "node install.mjs --profile web"
+  },
+  "license": "MIT"
+}

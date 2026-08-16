@@ -1,0 +1,13 @@
+{
+  "command": {
+    "name": "cache-check",
+    "description": "Probe whether the DeepSeek prefix cache for the current conversation is still alive.",
+    "inputHint": "optional: full — replay the whole history prefix (default is a light head probe)"
+  },
+  "probe": {
+    "lightMessageCount": 2,
+    "maxTokens": 1,
+    "temperature": 0,
+    "nonceLength": 24
+  }
+}
